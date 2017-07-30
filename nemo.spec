@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Implementacja NEMO oparta na architekturze MIPL 2
 Name:		nemo
 Version:	0.2
 Release:	0.1
-License:	GPL
+License:	GPL v2
 Group:		Networking/Daemons
 Source0:	http://www.mobile-ipv6.org/software/download/%{name}-%{version}.tar.gz
 # Source0-md5:	33458738ee95ed351099d260f59bbea9
@@ -44,3 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS BUGS INSTALL* NEWS README* THANKS
+%attr(755,root,root) %{_sbindir}/nemod
+%{_mandir}/man1/nemod.1*
+%{_mandir}/man5/nemod.conf.5*
+%{_mandir}/man7/mipv6.7*
